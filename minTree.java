@@ -20,30 +20,15 @@ public  class minTree {
     //minTree2(a);
     int tr=0;
     int br=0;
-    tr= sumaTree(a);
+    tr= sumTree(a);
     br = minTree2(a);
     System.out.println(tr);
     System.out.println(br);
 
     }
-/* 
-    public static Integer minTree2(Node node){
-        if(node == null){
-            return Integer.MAX_VALUE;
-        }
-       int bus = Math.min(node.left, node.right);
-        return Math.min(node.value, bus);
-    }
 
-    public static int sumTree(Node node){
-        if(node == null){
-            return 0;
-        }else{
-        return(node.value + node.right + node.left);
-        }
-    }*/
 
-    public static int sumaTree(Node node) {
+    public static int sumTree(Node node) {
 	
         if(node == null){
             return 0;
